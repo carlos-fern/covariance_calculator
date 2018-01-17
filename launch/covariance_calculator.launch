@@ -1,0 +1,9 @@
+<launch>
+  <node pkg="covariance_calculator" type="covariance_calculator_node.py" name="covariance_calculator" output="screen">
+    <param name="odom0" value="/odom"/>
+    <param name="odom1" value="/kirby/odom"/>
+    <param name="imu0" value="/left/imu/data_raw"/>
+    <param name="imu1" value="/right/imu/data_raw"/>
+    <param name="gps0" value="/fix"/>
+  </node>
+</launch>
